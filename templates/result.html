@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+
+</head>
+<body>
+    {% if outcome == 'high' %}
+        <h1 style="color:purple">Too high, try again!</h1>
+        <img src="https://media.giphy.com/media/3o6ZtaO9BZHcOjmErm/giphy.gif" width="480">
+    {% elif outcome == 'low' %}
+        <h1 style="color:red">Too low, try again!</h1>
+        <img src="https://media.giphy.com/media/jD4DwBtqPXRXa/giphy.gif" width="480">
+    {% else %}
+        <h1 style="color:green">You found me!</h1>
+        <img src="https://media.giphy.com/media/4T7e4DmcrP9du/giphy.gif" width="480">
+    {% endif %}
+    <br><br>
+    <a href="/" style="color:#3498db; text-decoration: none;">Try Again</a>
+</body>
+</html>

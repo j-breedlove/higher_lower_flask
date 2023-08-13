@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+
+</head>
+<body>
+    <h1>Guess a number between 0 and 9</h1>
+    <form action="/" method="post">
+        <input type="number" name="guess" min="0" max="9" required>
+        <input type="submit" value="Guess">
+    </form>
+    <img src="https://media.giphy.com/media/3o7aCSPqXE5C6T8tBC/giphy.gif" width="480">
+</body>
+</html>
