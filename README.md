@@ -13,7 +13,13 @@ A simple web-based game where users are prompted to guess a random number betwee
 
 1. Ensure you have Python and Flask installed.
 2. Clone the repository.
+```
+git clone https://github.com/j-breedlove/higher_lower_flask.git
+```
 3. Navigate to the project directory and run:
+```
+cd higher_lower_flask
+```
 
 ```
 python app.py
